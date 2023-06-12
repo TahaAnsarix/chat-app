@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "contact_id": 1,
+    "chat": [
+      {
+        "sent": "1",
+        "msg": "Hola"
+      },
+      {
+        "sent": "0",
+        "msg": "Hey, Sup?"
+      },
+      {
+        "sent": "1",
+        "msg": "Listen, there's a party tomorrow"
+      },
+      {
+        "sent": "0",
+        "msg": "Party? Where?"
+      },
+      {
+        "sent": "1",
+        "msg": "At my house in the night"
+      },
+      {
+        "sent": "0",
+        "msg": "Enough said. I will be there"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "contact_id": 2,
+    "chat": [
+      {
+        "sent": "1",
+        "msg": "Hola"
+      },
+      {
+        "sent": "0",
+        "msg": "Hey, Sup?"
+      },
+      {
+        "sent": "1",
+        "msg": "Listen, there's a party tomorrow"
+      },
+      {
+        "sent": "0",
+        "msg": "Party? Where?"
+      },
+      {
+        "sent": "1",
+        "msg": "At my house in the night"
+      },
+      {
+        "sent": "0",
+        "msg": "Enough said. I will be there"
+      }
+    ]
+  }
+]

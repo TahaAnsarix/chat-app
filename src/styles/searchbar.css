@@ -1,0 +1,45 @@
+.search-container {
+  display: flex;
+  height: 2.6rem;
+  background-color: rgb(209, 207, 207);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.search-container #search {
+  width: 2rem;
+  height: 60%;
+  padding-left: 8px;
+}
+
+.search-container #close {
+  width: 1.5rem;
+  height: 50%;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+.search-container input {
+  width: 80%;
+  height: 90%;
+  background-color: rgb(209, 207, 207);
+  border: none;
+  outline: none;
+  font-size: large;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+.search-container dialog {
+  padding: 2rem;
+  top: 50%;
+  left: 25%;
+  translate: -50% -50%;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.search-container dialog::backdrop {
+  background-color: grey;
+}

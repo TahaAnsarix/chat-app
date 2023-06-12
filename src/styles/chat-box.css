@@ -1,0 +1,119 @@
+.chat-box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space;
+  width: 100%;
+  height: 93vh;
+}
+
+.chat-area {
+  width: 100%;
+  height: 440px;
+  border-radius: 0.5rem;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  background-color: white;
+}
+
+.chat-area::-webkit-scrollbar {
+  /* display: none; Safari and Chrome */
+  width: 0;
+  height: 0;
+}
+
+.send-message-container {
+  width: 100%;
+  height: 9%;
+  display: flex;
+  gap: 0.25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.send-message-container textarea {
+  width: 90%;
+  max-height: 80%;
+  background-color: rgb(209, 207, 207);
+  font-size: large;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.send-message-container img {
+  height: 90%;
+}
+
+.send-message-container img:hover {
+  cursor: pointer;
+}
+
+.chat-box-header {
+  background-color: rgb(209, 207, 207);
+  width: 100%;
+  height: 12%;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.chat-box-header img {
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.chat-box-header p {
+  font-size: large;
+  font-weight: bold;
+}
+
+.chat {
+  width: auto;
+  height: fit-content;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.chat::-webkit-scrollbar {
+  /* display: none; Safari and Chrome */
+  width: 0;
+  height: 0;
+}
+
+.chat .common {
+  padding: 0.25rem;
+}
+
+.chat .common .sent {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.chat .common .sent span {
+  /* background-color: rgb(209, 207, 207); */
+  background-color: skyblue;
+  padding: 0.25rem;
+  border-radius: 1rem 0 1rem 1rem;
+}
+
+.chat .common .received {
+  display: flex;
+}
+
+.chat .common .received span {
+  /* background-color: rgb(209, 207, 207); */
+  background-color: rgb(252, 192, 202);
+  padding: 0.25rem;
+  border-radius: 0 1rem 1rem 1rem;
+}
