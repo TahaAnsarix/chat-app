@@ -5,14 +5,22 @@ import Chat from "./Chat";
 import ChatBoxHeader from "./ChatBoxHeader";
 
 const ChatArea = ({ chat }) => {
+  console.log("chat : ", chat);
+
   const getProfilePicUrl = () => {
-    return contacts.find((contact) => {
-      return contact.id === chat.contact_id;
-    });
+    if (chat.contact_id) {
+      return contacts.find((contact) => {
+        return contact.id === chat.contact_id;
+      });
+    } else {
+      return { name: chat.name, url: chat.url };
+    }
   };
 
   const { name, url } = getProfilePicUrl();
-  const chats = chat.chat;
+
+  let chats = [];
+  if (chat.contact_id) chats = chat.chat;
   //console.log("chat : ", chat);
   return (
     <>
